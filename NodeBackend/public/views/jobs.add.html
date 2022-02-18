@@ -1,0 +1,59 @@
+<!-- Sidebar -->
+<ul class="side-nav fixed" id="nav-mobile" style="width: 220px;">
+    <li class="bold" style="border-bottom: 1px solid #ccc;"><a class="waves-effect waves-light center-align red-text tx-lg tx-uppercase" href="/">Job Finder</a></li>
+    <li>
+    </li>
+</ul>
+
+<main id="app-content">
+    <div class="content">
+        <div class="row">
+            <div class="col m9">
+                <h2>Hire Smart. Hire Fast.</h2>
+
+                <h5>Post a job now</h5>
+
+                <div class="divider mb20"></div>
+
+                <form ng-submit="job.add()">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input type="text" id="job-data-title" ng-model="job.data.title" required="required" />
+                            <label for="job-data-title">Title</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea ng-model="job.data.description" id="job-data-description" class="materialize-textarea" required="required"></textarea>
+                            <label for="job-data-description">Description</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" id="job-data-salary" ng-model="job.data.salary" required="required" />
+                            <label for="job-data-salary">Salary (per month)</label>
+                        </div>
+
+                        <div class="input-field col s6">
+                            <select ng-model="job.data.location" class="browser-default" ng-options="city.id as city.name for city in cities"></select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Post
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col m3">
+                <img src="http://placehold.it/300x550" alt="Advertisement" class="responsive-img" />
+            </div>
+        </div>
+    </div>
+</main>

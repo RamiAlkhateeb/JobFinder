@@ -1,0 +1,26 @@
+{
+    "name": "JobFinder",
+    "version": "1.0.0",
+    "description": "Find jobs, easily!",
+    "author": "Atul Yadav",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "dependencies": {
+        "body-parser": "~1.5.2",
+        "cors": "^2.8.5",
+        "crypto-js": "^4.1.1",
+        "dotenv": "^16.0.0",
+        "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1",
+        "method-override": "~2.1.2",
+        "mongoose": "^6.0.5",
+        "morgan": "~1.2.2",
+        "nodemon": "^2.0.15"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/atulmy/nodejs-jobfinder.git"
+    }
+}
